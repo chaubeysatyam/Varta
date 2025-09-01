@@ -406,7 +406,7 @@ If you encounter any issues or have questions:
 ## 📬 Contact
 
 For any inquiries, feel free to reach out:  
-**[chaubeysatyam449@gmail.com](mailto:chaubeysatyam449@gmail.com)**
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=chaubeysatyam449@gmail.com)
 
 
 ## 🚀 Future Enhancements That Can Be Made
@@ -428,6 +428,7 @@ For any inquiries, feel free to reach out:
   <p>Made with ❤️ and AI assistance and Youtube tutorials</p>
   <p>⭐ Star this repository if you found it helpful!</p>
 </div>
+
 
 
 

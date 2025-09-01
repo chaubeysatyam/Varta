@@ -111,7 +111,7 @@
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/chaubeysatyam/Varta.git
-cd Varta-chat-app
+cd Varta
 ```
 
 ### Step 2: Install Dependencies
@@ -301,7 +301,7 @@ Content-Type: application/json
 ## 📁 File Structure
 
 ```
-Varta-chat-app/
+Varta/
 ├── 📁 public/                    # Frontend files
 │   ├── 📁 private/              # Private chat frontend
 │   │   ├── index.html           # Private chat HTML

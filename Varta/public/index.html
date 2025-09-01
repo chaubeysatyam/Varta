@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global_connect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+
+/* Typing indicator */
+.typing-indicator {
+  display: none;
+  font-style: italic;
+  color: gray;
+  margin-top: 5px;
+}
+
+.typing-indicator.show {
+  display: flex;
+  align-items: center;
+}
+
+.typing-indicator img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+    
+    .typing-indicator {
+      display: none;
+      font-style: italic;
+      color: gray;
+      margin-top: 5px;
+    }
+    .typing-indicator.show {
+      display: flex;
+      align-items: center;
+    }
+    .typing-indicator img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .toggle-btn {
+  position: absolute;
+  top: 10px;
+  color: #ffffff;
+  left: 10px;
+  z-index: 1000; /* Ensure it appears above other elements */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Adjust sidebar position for mobile */
+.sidebar {
+  position: fixed; /* Fixed position */
+  left: -250px; /* Hidden off-screen */
+  top: 0;
+  height: 100vh;
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #f0f0f0; /* Sidebar background color */
+  transition: left 0.3s ease; /* Smooth transition */
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+.sidebar.open {
+  left: 0; /* Show sidebar */
+}
+
+/* Media query for mobile devices */
+@media (min-width: 768px) {
+  .sidebar {
+    position: static; /* Normal flow on larger screens */
+    left: 0; /* Always visible */
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+}.logout-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.chat-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.chat-btn:hover {
+    background-color: #218838;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="auth-container">
+      <div class="auth-box">
+        <h2>Welcome</h2>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <button id="switch-to-register">Need an account?</button>
+      </div>
+    </div>
+
+    <div id="chat-container" class="hidden">
+      <button id="toggle-sidebar" class="toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <div class="sidebar">
+        <div class="server-header">
+          <h3>Varta</h3>
+          <div class="button-container">
+              <button id="logout-button" class="logout-btn">
+                  <i class="fas fa-sign-out-alt"></i>
+              </button>
+              <a href="http://localhost:4000/public/private/index.html" class="chat-btn">
+                  <i class="fas fa-comment-dots"></i> Private Chat
+              </a>
+          </div>
+      </div>
+      
+        <div class="profile-section">
+          <img id="profile-pic" src="/default-avatar.png" alt="Profile" class="profile-pic">
+          <div class="profile-info">
+            <h4 id="profile-username"></h4>
+            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+          </div>
+        </div>
+        <div class="online-users">
+          <h4>Users</h4>
+          <div id="users-list"></div>
+        </div>
+      </div>
+      
+
+      <div class="chat-area">
+        <div class="chat-header">
+          <h3># Global</h3>
+          <span class="online-count"></span>
+          <div id="typing-indicator" class="typing-indicator">
+            <img id="typing-profile-pic" src="/default-avatar.png" alt="Profile">
+            <span id="typing-username"></span>&nbspis typing...
+          </div>
+        </div>
+        <div id="messages"></div>
+        <div class="message-input">
+          <div class="message-form-container">
+            <div id="file-preview" class="hidden"></div>
+            <form id="message-form">
+              <button type="button" class="upload-btn" onclick="document.getElementById('file-upload').click()">
+                <i class="fas fa-paperclip"></i>
+              </button>
+              <input type="file" id="file-upload" accept="*/*">
+              <input type="text" id="message-text" placeholder="Send a message..." autocomplete="off">
+              <button type="submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            
+            <div id="image-modal" class="modal" onclick="closeModal()">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modal-image">
+              <div id="caption"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

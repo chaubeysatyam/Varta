@@ -38,7 +38,7 @@
 - [Security Features](#security-features)
 - [API Documentation](#api-documentation)
 - [File Structure](#file-structure)
-- [Credits](#credits)
+
 
 ## 🌟 Overview
 
@@ -410,5 +410,6 @@ For any inquiries, feel free to reach out:
   <p>Made with ❤️ and AI assistance and Youtube tutorials</p>
   <p>⭐ Star this repository if you found it helpful!</p>
 </div>
+
 
 

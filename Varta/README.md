@@ -112,6 +112,7 @@
 ```bash
 git clone https://github.com/chaubeysatyam/Varta.git
 cd Varta
+cd varta
 ```
 
 ### Step 2: Install Dependencies
@@ -119,18 +120,35 @@ cd Varta
 npm install
 ```
 
-### Step 3: Start the Application
+### Step 3: Install Dependencies For Private Chat
+```bash
+cd public/private
+npm install
+```
 
 #### For Development (with auto-restart):
 ```bash
-npm run dev
+cd ..
+cd ..
 ```
 
-#### For Production:
+## 🚀 Start the Servers (VERY IMPORTANT)
+
+> ⚠️ **YOU MUST RUN TWO SERVERS IN TWO DIFFERENT TERMINALS**
+
+**Terminal 1 – Main Server**
 ```bash
-npm start
+node server.js
 ```
 
+**Terminal 2 – Private Chat Server**
+```bash
+node priserver.js
+```
+
+✅ Keep both terminals running while you use the project.
+
+---
 ### Step 4: Access the Application
 - **Global Chat**: http://localhost:3000
 - **Private Chat**: http://localhost:4000/public/private/index.html

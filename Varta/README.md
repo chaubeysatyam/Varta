@@ -126,7 +126,7 @@ cd public/private
 npm install
 ```
 
-#### For Development (with auto-restart):
+#### Go Back To Root Folder (all server files):
 ```bash
 cd ..
 cd ..
@@ -428,6 +428,7 @@ For any inquiries, feel free to reach out:
   <p>Made with ❤️ and AI assistance and Youtube tutorials</p>
   <p>⭐ Star this repository if you found it helpful!</p>
 </div>
+
 
 
 

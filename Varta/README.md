@@ -9,20 +9,18 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 </div>
 
+
+
 <p align="center">
-  <img src="https://your-image-link.com/logo.png" alt="Project Logo" width="120" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/1.png" alt="Screenshot 1" width="420" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/2.png" width="420" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/3.png" width="420" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/1.png" alt="Screenshot 1" width="220" />
-  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/2.png" width="220" />
-  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/3.png" width="220" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/4.png" alt="Screenshot 4" width="220" />
-  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/5.png" alt="Screenshot 5" width="220" />
-  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/7.png" alt="Screenshot 6" width="220" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/4.png" alt="Screenshot 4" width="420" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/5.png" alt="Screenshot 5" width="420" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/7.png" alt="Screenshot 6" width="420" />
 </p>
 
 <p align="center">
@@ -44,7 +42,7 @@
 
 ## 🌟 Overview
 
-**Varta** is a cutting-edge real-time chat application that combines the power of global group chat with secure private messaging. Built with modern web technologies and enterprise-grade encryption, it provides a seamless communication experience with advanced security features.
+**Varta** is a  real-time chat application that combines the power of global group chat with secure private messaging. Built with modern web technologies and enterprise-grade encryption, it provides a seamless communication experience with advanced security features.
 
 ### Key Highlights
 - 🔐 **End-to-End Encryption** - All messages and files are encrypted using AES-256-GCM
@@ -368,12 +366,12 @@ This project showcases the power of combining AI assistance with educational con
 - **Documentation**: Assisted in creating comprehensive documentation
 
 #### 📺 YouTube Tutorial Learning
-- **Node.js Fundamentals**: Learned server-side JavaScript development
+- **Node.js Fundamentals**: Learning server-side JavaScript development
 - **Express.js Framework**: Web application framework concepts
 - **Socket.io Integration**: Understood real-time communication patterns
 - **Authentication Systems**: JWT and bcryptjs implementation
 - **File Upload Handling**:  Multer and file processing
-- **Frontend Development**: Improved HTML, CSS, and JavaScript skills
+- **Frontend Development**: Improving HTML, CSS, and JavaScript skills
 
 #### 🎯 Key Learning Outcomes
 - **Full-Stack Development**: Gained experience in both frontend and backend
@@ -387,8 +385,11 @@ This project showcases the power of combining AI assistance with educational con
 
 If you encounter any issues or have questions:
 
+## 📬 Contact
 
-1. **Contact**: expale@gmail.com
+For any inquiries, feel free to reach out:  
+**[chaubeysatyam449@gmail.com](mailto:chaubeysatyam449@gmail.com)**
+
 
 ## 🚀 Future Enhancements That Can Be Made
 
@@ -409,4 +410,5 @@ If you encounter any issues or have questions:
   <p>Made with ❤️ and AI assistance and Youtube tutorials</p>
   <p>⭐ Star this repository if you found it helpful!</p>
 </div>
+
 

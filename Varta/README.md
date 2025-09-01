@@ -9,6 +9,28 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 </div>
 
+<p align="center">
+  <img src="https://your-image-link.com/logo.png" alt="Project Logo" width="120" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/1.png" alt="Screenshot 1" width="220" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/2.png" width="220" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/3.png" width="220" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/4.png" alt="Screenshot 4" width="220" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/5.png" alt="Screenshot 5" width="220" />
+  <img src="https://github.com/chaubeysatyam/Varta/blob/1e9c41ab7b5d195c32209d53fcf2d2852d9b670a/Varta/images/7.png" alt="Screenshot 6" width="220" />
+</p>
+
+<p align="center">
+  <em>A clean, modern, and powerful project — lightweight yet production ready.</em>
+</p>
+
+---
+
 ## 📋 Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -90,7 +112,7 @@
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Varta-chat-app.git
+git clone https://github.com/chaubeysatyam/Varta.git
 cd Varta-chat-app
 ```
 
@@ -387,3 +409,4 @@ If you encounter any issues or have questions:
   <p>Made with ❤️ and AI assistance and Youtube tutorials</p>
   <p>⭐ Star this repository if you found it helpful!</p>
 </div>
+
